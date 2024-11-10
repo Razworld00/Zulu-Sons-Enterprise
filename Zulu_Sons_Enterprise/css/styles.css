@@ -1,0 +1,302 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: white;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: linear-gradient(135deg, #add8e6 0%, #ffa07a 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    background-color: #ffa07a;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #e9967a;
+}
+
+/* Navigation */
+.navbar {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffa07a;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 3px solid #e0e0e0;  /* Light border between sections */
+}
+
+.section:nth-child(even) {
+    background-color: #f7f9fc;  /* Alternating light blue background */
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Cards in Services Section */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 25px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    color: #ffa07a;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .icon {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 3px solid #e0e0e0;  /* Footer border */
+}
+
+.footer a {
+    color: #ffa07a;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffd1b3;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Team Section */
+.team-section {
+    background-color: #ffffff;
+    border-top: 3px solid #e0e0e0; /* Light border */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Team Grid Layout */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Team Card Styling */
+.team-card {
+    background-color: #f7f9fc;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Team Icon */
+.team-icon {
+    font-size: 3rem;
+    color: #ffa07a;
+    margin-bottom: 10px;
+}
+
+/* Contact Info Styling */
+.team-card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icon Styling for Phone and Email */
+.team-card i {
+    color: #ffa07a;
+    margin-right: 8px;
+}
+
+.team-card a {
+    color: #333;
+    text-decoration: none;
+}
+
+.team-card a:hover {
+    color: #ffa07a;
+}
+/* Services Section */
+.services-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 3px solid #e0e0e0; /* Border design for separation */
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center; /* Centered Heading */
+}
+
+/* Services Grid Layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the grid within the section */
+}
+
+/* Service Card Styling */
+.card {
+    background-color: #f7f9fc;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    color: #ffa07a;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .icon {
+    transform: scale(1.1);
+}
+
+/* Service Card Text Styling */
+.card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
