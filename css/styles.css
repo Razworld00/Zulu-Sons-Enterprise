@@ -442,6 +442,7 @@ body {
     color: #ffa07a;
 }
 
+<<<<<<< HEAD
 .header-image {
     display: block;
     margin: 10px auto; /* Centers the image horizontally */
@@ -473,3 +474,6 @@ body {
     justify-content: center;
     gap: 10px; /* Space between images */
 }
+=======
+
+>>>>>>> 8f36742b0b6c39394e798f31192d5fe5991afb72
