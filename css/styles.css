@@ -441,3 +441,35 @@ body {
 .team-card i {
     color: #ffa07a;
 }
+
+.header-image {
+    display: block;
+    margin: 10px auto; /* Centers the image horizontally */
+    width: 100px; /* Sets a fixed width; adjust as needed */
+    max-width: 50%; /* Ensures it doesn’t exceed container width */
+    height: 40; /* Maintains the aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+/* Container for Centering Images */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    gap: 30px; /* Adds space between the images */
+    margin-top: 20px; /* Optional: Adds space above the image group */
+}
+
+.header-image {
+    display: block;
+    margin: 10px auto; /* Centers the image horizontally */
+    width: 200px; /* Set a fixed width for consistency */
+    max-width: 50%; /* Ensures it doesn’t exceed container width */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between images */
+}
