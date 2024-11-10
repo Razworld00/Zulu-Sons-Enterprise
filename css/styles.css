@@ -441,3 +441,13 @@ body {
 .team-card i {
     color: #ffa07a;
 }
+
+.header-image {
+    display: block;
+    margin: 20px auto;
+    width: 300px !important; /* Ensures this width takes precedence */
+    max-width: 50% !important;
+    height: auto !important;
+    border-radius: 8px;
+}
+
