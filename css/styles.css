@@ -474,6 +474,19 @@ body {
     justify-content: center;
     gap: 10px; /* Space between images */
 }
-=======
 
->>>>>>> 8f36742b0b6c39394e798f31192d5fe5991afb72
+/* Styling the image grid container */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 16px; /* Space between images */
+  margin-top: 20px;
+}
+
+/* Styling individual images (optional) */
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
