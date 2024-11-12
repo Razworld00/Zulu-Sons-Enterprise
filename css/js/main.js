@@ -9,6 +9,8 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
     });
 });
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // Sticky Navbar on Scroll
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
